@@ -1,0 +1,15 @@
+\name{critical.value.nair.95}
+\alias{critical.value.nair.95}
+\docType{data}
+\title{Critical Values}
+\description{
+Critical values for the 95 \% equal precision band by Nair.
+}
+\usage{data(critical.value.hall.95)}
+\details{
+  These values are taken from the book by Klein & Moeschberger.
+}
+\source{
+Klein, Moeschberger (2002): Survival Analysis, Springer.
+}
+\keyword{datasets}
