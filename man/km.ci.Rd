@@ -56,14 +56,16 @@ tables in Klein and Moeschberger (2002).
 Comparison of simultaneous and pointwise confidence intervals for survival functions.
  (2005, submitted to Biom. J.).}
 
-\seealso{'survfit', 'print.survfit', 'plot.survfit', 'lines.survfit',
-     'summary.survfit', 'survfit.object', 'coxph', 'Surv', 'strata'. }
+\seealso{\code{\link[survival]{survfit}}, \code{\link[survival]{print.survfit}}, 
+  \code{\link[survival]{plot.survfit}}, \code{\link[survival]{lines.survfit}}, 
+  \code{\link[survival]{summary.survfit}}, \code{\link[survival]{survfit.object}}, 
+ \code{\link[survival]{coxph}}, \code{\link[survival]{Surv}}, \code{\link[survival]{strata}}. }
 \examples{
 require(survival)
 data(rectum.dat)
 
-#fit a Kaplan-Meier and plot it
-fit <- survfit(Surv(time, status), data=rectum.dat)
+# fit a Kaplan-Meier and plot it
+fit <- survfit(Surv(time, status) ~ 1, data=rectum.dat)
 plot(fit)
 fit2 <- km.ci(fit)
 plot(fit2)
