@@ -15,6 +15,6 @@ function(abw,kap.mei,method)
         lower <- kap.mei^(1/abw)
         upper <- kap.mei^abw
     }
-    return(list(lower=lower,upper=upper))
+    return(list(lower=lower, upper=upper))
 }
 

@@ -9,7 +9,7 @@ function(fun,opar,lval,uval,tol=1e-7) {
   uval<-lval
   lval<-t2
  }
- converged<-F
+ converged<-FALSE
  while( !converged ) {
   t1<-(lval+uval)/2
   nf<-fun(t1,opar)

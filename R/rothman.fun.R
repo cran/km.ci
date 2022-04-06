@@ -1,3 +1,4 @@
+#' @importFrom stats qnorm
 "rothman.fun" <-
 function(sfit,conf.level=0.95)
 {

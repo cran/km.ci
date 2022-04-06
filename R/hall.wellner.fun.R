@@ -1,3 +1,4 @@
+#' @importFrom utils data
 "hall.wellner.fun" <-
 function(survi,tl=NA,tu=NA, method="linear", conf.lev=0.95)
 {
@@ -9,7 +10,6 @@ function(survi,tl=NA,tu=NA, method="linear", conf.lev=0.95)
     # "critical.value.hall.99" (see also Appendix C
     # in Klein & Moeschberger p. 451).
     
-    data(critical.value.hall.90, critical.value.hall.95, critical.value.hall.99)
     survi <- survi
     tl <- tl
     tu <- tu

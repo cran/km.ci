@@ -1,3 +1,4 @@
+#' @import survival
 "a.up.low.fun" <-
 function(survi, tl, tu)
 {
@@ -5,7 +6,7 @@ function(survi, tl, tu)
     # determining a Hall-Wellner band. It takes the a survfit object
     # and returns the values belonging to the two timepoints
     # and a matrix with time, the Kaplan-Meier estimator, the sigmas
-    # (the sum in Greenwoods formula) and the std. error.
+    # (the sum in Greenwood's formula) and the std. error.
     # t1 should be at least the smallest time, tu the smaller or equal
     # than the highest time.
     

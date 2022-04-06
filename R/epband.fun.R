@@ -1,3 +1,4 @@
+#' @importFrom utils data
 "epband.fun" <-
 function(survi, tl=NA,tu=NA, method="linear",conf.lev=0.95)
 {
@@ -9,7 +10,6 @@ function(survi, tl=NA,tu=NA, method="linear",conf.lev=0.95)
     # "critical.value.nair.99" (see also Appendix C
     # in Klein & Moeschberger p. 451).
     
-    data(critical.value.nair.90, critical.value.nair.95, critical.value.nair.99)
     survi <- survi
     tl <- tl
     tu <- tu
